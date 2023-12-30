@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 body{
-    background: #000;
+    height: 100vh;
+    background: linear-gradient(160deg,orange,white,green);
     display: flex;
     flex-direction: column;
     gap: 40px;
-    /* justify-content: space-between; */
 }
 
 .container{
@@ -26,9 +26,11 @@ body{
     margin: 100px auto; */
     width: 80rem;
     height: 40rem;
-    background: #fff;
+    background: #00000027;
+    color: white;
     border-radius: 20px;
     padding: 20px;
+    margin: 0 20px;
 }
 
 .input{
@@ -42,12 +44,14 @@ body{
     padding: 1.6rem;
     width:70rem;
     border-radius: 20px;
+    font-size: 1.2rem;
 }
 
 .button{
     padding: 1.6rem;
     width:10rem;
     border-radius: 20px;
+    font-size: 1.2rem;
 }
 
 

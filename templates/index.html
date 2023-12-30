@@ -6,9 +6,17 @@
 
 {% block body %}
 
+<div class="container">
+    <div class="output">
+        <h3>I am Google Gemini</h3>
+    </div>
+</div>
+
 <form action="/" class="form" method="POST">
-    <input type="text" value="Enter what do you want to ask?" id="ask" name="ask">
-    <input type="submit">
+    <div class="input">
+        <input type="text" value="Enter what do you want to ask?" id="ask" name="ask">
+        <input type="submit" class="button">
+    </div>
 </form>
 
 {% endblock body %}

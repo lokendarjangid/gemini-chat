@@ -15,7 +15,8 @@ def main():
 @app.route('/<in_put>')
 def hello_world(in_put):  # put application's code here
     output = gemini.generate(in_put)
-    return render_template('index.html', output=output)
+    return output
+    # return render_template('index.html', output=output)
 
 
 if __name__ == '__main__':

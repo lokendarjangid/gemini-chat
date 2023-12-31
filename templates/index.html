@@ -8,13 +8,18 @@
 
 <div class="container">
     <div class="output">
-        <h3>I am Google Gemini</h3>
+        <h3>
+            {% if output|length < 0 %} <h3>Enter what do you want to ask?</h3>
+        {% else %}
+        {{ output }}
+        {% endif %}
+        </h3>
     </div>
 </div>
 
 <form action="/" class="form" method="POST">
     <div class="input">
-        <input type="text" value="Enter what do you want to ask?" id="ask" name="ask">
+        <input type="text" placeholder="Enter what do you want to ask?" id="ask" name="ask">
         <input type="submit" class="button">
     </div>
 </form>

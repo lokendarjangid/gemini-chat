@@ -5,6 +5,7 @@
 }
 body{
     height: 100vh;
+    /* linear gradient of indian flag */
     background: linear-gradient(160deg,orange,white,green);
     display: flex;
     flex-direction: column;

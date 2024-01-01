@@ -3,7 +3,7 @@ import geminiSrc
 
 app = Flask(__name__)
 app.secret_key = "433e732fe46eb93bed8f0392"
-app.permanent_session_lifetime = 360
+app.permanent_session_lifetime = 300
 
 
 # initialization of gemini
@@ -12,7 +12,7 @@ gemini = geminiSrc.Gemini()
 
 @app.route('/', methods=['GET', 'POST'])
 def main():
-    session.permanent = True
+    session.permanent = False
     session_data = session.get('output_dict', {})
     if request.method == 'POST':
         task_content = request.form['ask']
@@ -29,10 +29,16 @@ def main():
         # tasks = Todo.query.order_by(Todo.date_created).all()
         try :
             session_data = session.get('output_dict', {})
-            print(session_data)
+            # print(session_data)
             return render_template('index.html', output=session_data)
         except:
             return render_template('index.html')
+        
+@app.route('/clear_session', methods=['GET', 'POST'])
+def clear_session():
+    session.pop('output_dict', None)
+    return 'Session cleared'
+
 
 if __name__ == '__main__':
     app.run(debug=True)

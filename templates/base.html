@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
-    <script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script>
     {% block head %}{% endblock %}
 </head>
 
 <body>
     {% block body %}{% endblock %}
+    <script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script>
 </body>
 
 </html>

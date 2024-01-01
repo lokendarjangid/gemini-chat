@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     height: 100vh;
     /* linear gradient of indian flag */
-    background: linear-gradient(to bottom,rgb(112, 62, 62),rgba(17, 157, 71, 0.425),rgba(255, 255, 3, 0.406));
+    background: linear-gradient(to bottom, rgb(112, 62, 62), rgba(17, 157, 71, 0.425), rgba(255, 255, 3, 0.406));
     /* background: linear-gradient(160deg,orange,white,green); */
     font-family: 'Quicksand', sans-serif;
     display: flex;
@@ -17,7 +18,7 @@ body{
     gap: 40px;
 }
 
-.container{
+.container {
     margin-top: 5rem;
     width: 100vw;
     height: 70vh;
@@ -27,7 +28,7 @@ body{
     align-items: center;
 }
 
-.output{
+.output {
     width: 80rem;
     height: 60rem;
     background: #0000003b;
@@ -36,13 +37,23 @@ body{
     padding: 20px;
     margin: 20px 20px 0 20px;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.output::-webkit-scrollbar {
+    display: none;
+}
+
 /* .pikaimg{
     width: 200px;
     height: 200px;
 } */
 
-.input{
+.input {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,21 +61,19 @@ body{
 }
 
 
-#ask{
+#ask {
     padding: 1.6rem;
-    width:70rem;
+    width: 70rem;
     border-radius: 20px;
     font-size: 1.2rem;
     border: none;
 }
 
-.button{
+.button {
     border: none;
     padding: 1.6rem;
-    width:10rem;
+    width: 10rem;
     border-radius: 20px;
     font-size: 1.2rem;
-    background:linear-gradient(rgba(0, 0, 0, 0.294),rgba(255, 255, 255, 0.437)) ;
+    background: linear-gradient(rgba(0, 0, 0, 0.294), rgba(255, 255, 255, 0.437));
 }
-
-

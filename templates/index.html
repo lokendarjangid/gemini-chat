@@ -7,13 +7,21 @@
 {% block body %}
 
 <div class="container">
-    <h1>Gemini chat By Erfan and Lokendar </h1>
+    <h1>Gemini chat By Erfan and Lokendar</h1>
     <div class="output">
         <h3>
-            {% if output|length < 0 %} <h3>Enter what do you want to ask?</h3>
-        {% else %}
-        {{ output }}
-        {% endif %}
+            {% if output %}
+            {% for key, value in output.items() %}
+            <p>
+                <b>{{ key }}</b>
+                <br>
+                {{ value }}
+                <hr>
+            </p>
+            {% endfor %}
+            {% else %}
+            <h3>Enter what do you want to ask?</h3>
+            {% endif %}
         </h3>
     </div>
 </div>

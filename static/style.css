@@ -35,7 +35,7 @@ body{
     border-radius: 20px;
     padding: 20px;
     margin: 20px 20px 0 20px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 /* .pikaimg{
     width: 200px;

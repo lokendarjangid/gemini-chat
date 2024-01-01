@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -6,7 +9,9 @@
 body{
     height: 100vh;
     /* linear gradient of indian flag */
-    background: linear-gradient(160deg,orange,white,green);
+    background: linear-gradient(to bottom,rgb(112, 62, 62),rgba(17, 157, 71, 0.425),rgba(255, 255, 3, 0.406));
+    /* background: linear-gradient(160deg,orange,white,green); */
+    font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -17,27 +22,31 @@ body{
     width: 100vw;
     height: 70vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .output{
-    
-    /* border: 2px solid red;
-    margin: 100px auto; */
     width: 80rem;
-    height: 40rem;
-    background: #00000027;
-    color: white;
+    height: 60rem;
+    background: #0000003b;
+    color: rgb(255, 255, 255);
     border-radius: 20px;
     padding: 20px;
-    margin: 0 20px;
+    margin: 20px 20px 0 20px;
+    overflow: scroll;
 }
+/* .pikaimg{
+    width: 200px;
+    height: 200px;
+} */
 
 .input{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
 }
 
 
@@ -46,14 +55,16 @@ body{
     width:70rem;
     border-radius: 20px;
     font-size: 1.2rem;
+    border: none;
 }
 
 .button{
+    border: none;
     padding: 1.6rem;
     width:10rem;
     border-radius: 20px;
     font-size: 1.2rem;
-    background: rgba(0, 128, 128, 0.475);
+    background:linear-gradient(rgba(0, 0, 0, 0.294),rgba(255, 255, 255, 0.437)) ;
 }
 
 

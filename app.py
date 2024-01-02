@@ -10,6 +10,8 @@ app.permanent_session_lifetime = 300
 gemini = geminiSrc.Gemini()
 
 
+# comment added to test git
+
 @app.route('/', methods=['GET', 'POST'])
 def main():
     session.permanent = False

@@ -26,7 +26,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+/* Output of the result */
 .output{
     width: 80rem;
     height: 60rem;
@@ -35,12 +35,12 @@ body{
     border-radius: 20px;
     padding: 20px;
     margin: 20px 20px 0 20px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
-/* .pikaimg{
+.pikaimg{
     width: 200px;
     height: 200px;
-} */
+}
 
 .input{
     display: flex;

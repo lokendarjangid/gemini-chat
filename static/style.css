@@ -10,7 +10,6 @@ body{
     height: 100vh;
     /* linear gradient of indian flag */
     background: linear-gradient(to bottom,rgb(112, 62, 62),rgba(17, 157, 71, 0.425),rgba(255, 255, 3, 0.406));
-    /* background: linear-gradient(160deg,orange,white,green); */
     font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: column;
@@ -18,7 +17,7 @@ body{
 }
 
 .container{
-    margin-top: 5rem;
+    margin-top: 2rem;
     width: 100vw;
     height: 70vh;
     display: flex;
@@ -26,22 +25,33 @@ body{
     justify-content: center;
     align-items: center;
 }
-/* Output of the result */
 .output{
-    width: 80rem;
-    height: 60rem;
+    width:65vw;
+    height: 60vh;
     background: #0000003b;
     color: rgb(255, 255, 255);
     border-radius: 20px;
     padding: 20px;
-    margin: 20px 20px 0 20px;
+    margin: 10px 20px 0 20px;
     overflow-y: auto;
 }
+.output::-webkit-scrollbar{
+    display: none;
+}
+
+.key{
+    width: 50%;
+    margin-right: 100px;
+}
+.value{
+    width: 50%;
+    margin-left: 50%;
+}
 /* pikachu image */
-.pikaimg{
+/* .pikaimg{
     width: 200px;
     height: 200px;
-}
+} */
 
 .input{
     display: flex;
@@ -53,7 +63,7 @@ body{
 
 #ask{
     padding: 1.6rem;
-    width:70rem;
+    width:58vw;
     border-radius: 20px;
     font-size: 1.2rem;
     border: none;
@@ -62,10 +72,20 @@ body{
 .button{
     border: none;
     padding: 1.6rem;
-    width:10rem;
+    width: 8vw;
     border-radius: 20px;
     font-size: 1.2rem;
     background:linear-gradient(rgba(0, 0, 0, 0.294),rgba(255, 255, 255, 0.437)) ;
+}
+
+@media screen and (max-width:1250px) {
+    .input{
+        display: flex;
+        flex-direction: column;
+    }
+    .button{
+        width: 30vw;
+    }
 }
 
 

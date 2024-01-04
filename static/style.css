@@ -18,8 +18,9 @@ body {
     gap: 40px;
 }
 
-.container {
-    margin-top: 5rem;
+
+.container{
+    margin-top: 2rem;
     width: 100vw;
     height: 70vh;
     display: flex;
@@ -72,8 +73,19 @@ body {
 .button {
     border: none;
     padding: 1.6rem;
-    width: 10rem;
+    width: 8vw;
     border-radius: 20px;
     font-size: 1.2rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.294), rgba(255, 255, 255, 0.437));
+    background:linear-gradient(rgba(0, 0, 0, 0.294),rgba(255, 255, 255, 0.437)) ;
 }
+
+@media screen and (max-width:1250px) {
+    .input{
+        display: flex;
+        flex-direction: column;
+    }
+    .button{
+        width: 30vw;
+    }
+}
+

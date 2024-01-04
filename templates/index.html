@@ -13,9 +13,9 @@
             {% if output %}
             {% for key, value in output.items() %}
             <p>
-                <b>{{ key }}</b>
+                <div class="key"><b>{{ key }}</b></div>
                 <br>
-                <b>{{ value }}</b>
+                <div class="value"><b>{{ value }}</b></div>
                 <hr>
             </p>
             {% endfor %}

@@ -9,9 +9,6 @@ app.permanent_session_lifetime = 300
 # initialization of gemini
 gemini = geminiSrc.Gemini()
 
-
-
-
 @app.route('/', methods=['GET', 'POST'])
 def main():
     session.permanent = False

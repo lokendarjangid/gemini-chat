@@ -19,7 +19,7 @@ Before running the Gemini Chat-Bot, ensure you have the following installed:
 - Python
 - Flask
 - Required Python libraries (install using `pip install -r requirements.txt`)
-- Gemini API key (available from the [Google Cloud Console](https://console.cloud.google.com/))
+- Gemini API key (available from the [Maker Suite Google](https://makersuite.google.com/))
 
 ### Installation
 
@@ -48,15 +48,17 @@ Before running the Gemini Chat-Bot, ensure you have the following installed:
     pip install -r requirements.txt
     ```
 
-5. Configure the Gemini API key:
+5. Install Google Cloud CLI:
+    
+    [Google Cloud CLI](https://cloud.google.com/sdk/docs/install) is required to run the Gemini Chat-Bot.
 
-    Copy the API key from the Google Cloud Console and set it as an environment variable:
+6. Configure the Gemini API key:
 
-    ```bash
-    export GEMINI_API_KEY="your-api-key"
-    ```
+    Copy the API key from the Make Suite Google and set it as an environment variable:
 
-6. Run the application:
+    replace the name of .env.example to .env and paste the API key in the .env file
+
+7. Run the application:
 
     ```bash
     python app.py

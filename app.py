@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, session
 import geminiSrc
 
 app = Flask(__name__)
-app.secret_key = "433e732fe46eb93bed8f0392"
+app.secret_key = 'Your API Key Here'
 app.permanent_session_lifetime = 300
 
 

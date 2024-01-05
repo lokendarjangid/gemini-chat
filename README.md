@@ -26,13 +26,14 @@ Before running the Gemini Chat-Bot, ensure you have the following installed:
 1. Clone the repository from GitHub:
 
     ```bash
-    git clone https://github.com/your-username/gemini-chat-bot.git
+    git clone https://github.com/lokendarjangid/gemini-chat.git
+
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd gemini-chat-bot
+    cd gemini-chat
     ```
 
 3. Set up the virtual environment (optional but recommended):

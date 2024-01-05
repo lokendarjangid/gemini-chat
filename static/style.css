@@ -30,14 +30,15 @@ body {
 }
 
 .output {
-    width: 80rem;
-    height: 60rem;
+    width: 65vw;
+    height: 60vh;
     background: #0000003b;
     color: rgb(255, 255, 255);
     border-radius: 20px;
     padding: 20px;
     margin: 20px 20px 0 20px;
     overflow-y: scroll;
+    
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
@@ -54,6 +55,15 @@ body {
     height: 200px;
 } */
 
+.key{
+    width: 50%;
+    margin-right: 150px;
+}
+.value{
+    width: 58%;
+    margin-left: 43%;
+}
+
 .input {
     display: flex;
     justify-content: center;
@@ -62,15 +72,15 @@ body {
 }
 
 
-#ask {
+#ask{
     padding: 1.6rem;
-    width: 70rem;
+    width:58vw;
     border-radius: 20px;
     font-size: 1.2rem;
     border: none;
 }
 
-.button {
+.button{
     border: none;
     padding: 1.6rem;
     width: 8vw;

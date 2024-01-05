@@ -8,16 +8,16 @@
 
 <div class="container">
     <h1>Gemini chat</h1>
-    <h4><a href="https://github.com/lokendarjangid/gemini-chat"></a>Source</a></h4>
+    <h4><a href="https://github.com/lokendarjangid/gemini-chat">Source</a></h4>
     <div class="output">
         <h3>
             {% if output %}
             {% for key, value in output.items() %}
             <p>
-                <div class="key"><b>{{ key }}</b></div>
-                <br>
-                <div class="value"><b>{{ value }}</b></div>
-                <hr>
+            <div class="key"><b>{{ key }}</b></div>
+            <br>
+            <div class="value"><b>{{ value }}</b></div>
+            <hr>
             </p>
             {% endfor %}
             {% else %}

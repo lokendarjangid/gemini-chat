@@ -15,7 +15,7 @@ Google Cloud CLI
 
 Clone the repository:
 Bash
-git clone https://github.com/your-username/gemini-chat.git
+git clone https://github.com/lokendarjangid/gemini-chat.git
 Use code with caution. Learn more
 Navigate to the project directory:
 Bash

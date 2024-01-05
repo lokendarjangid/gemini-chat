@@ -27,7 +27,6 @@ Before running the Gemini Chat-Bot, ensure you have the following installed:
 
     ```bash
     git clone https://github.com/lokendarjangid/gemini-chat.git
-    ```
 
 2. Navigate to the project directory:
 

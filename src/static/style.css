@@ -56,12 +56,19 @@ body {
 } */
 
 .key{
-    width: 50%;
-    margin-right: 150px;
+    width: auto;
+    margin-left: 600px;
+    background: rgba(12, 56, 139, 0.62);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 .value{
     width: 58%;
-    margin-left: 43%;
+    margin-right: 43%;
+    background: rgb(23, 92, 86);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .input {
@@ -106,6 +113,27 @@ body {
     }
     .button{
         width: 30vw;
+    }
+    .key{
+        width: auto;
+        margin-left: 140px;
+        background: rgba(12, 56, 139, 0.62);
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    .value{
+        width: 58%;
+        font-size: 14px;
+        margin-right: 43%;
+        background: rgb(23, 92, 86);
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .output {
+        width: 85vw;
+        height: 60vh;
     }
 }
 

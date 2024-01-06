@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, session
-import geminiSrc
+import gemini_src
 
 app = Flask(__name__)
 app.secret_key = "433e732fe46eb93bed8f0392"
@@ -7,7 +7,7 @@ app.permanent_session_lifetime = 300
 
 
 # initialization of gemini
-gemini = geminiSrc.Gemini()
+gemini = gemini_src.Gemini()
 
 @app.route('/', methods=['GET', 'POST'])
 def main():

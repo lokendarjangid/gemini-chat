@@ -89,6 +89,16 @@ body {
     background:linear-gradient(rgba(0, 0, 0, 0.294),rgba(255, 255, 255, 0.437)) ;
 }
 
+.source-heading {
+    width: 100%;
+    display:flex;
+    justify-content: end;
+}
+
+.source-link {
+    margin-right: 1rem;
+}
+
 @media screen and (max-width:1250px) {
     .input{
         display: flex;

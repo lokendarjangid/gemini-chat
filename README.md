@@ -18,7 +18,6 @@ Before running the Gemini Chat-Bot, ensure you have the following installed:
 
 - Python
 - Flask
-- Required Python libraries (install using `pip install -r requirements.txt`)
 - Gemini API key (available from the [Maker Suite Google](https://makersuite.google.com/))
 
 ### Installation

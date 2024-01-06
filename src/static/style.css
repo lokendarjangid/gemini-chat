@@ -56,7 +56,7 @@ body {
 } */
 
 .key{
-    width: 50%;
+    width: auto;
     margin-left: 600px;
     background: rgba(12, 56, 139, 0.62);
     padding: 10px;
@@ -115,7 +115,7 @@ body {
         width: 30vw;
     }
     .key{
-        width: 50%;
+        width: auto;
         margin-left: 140px;
         background: rgba(12, 56, 139, 0.62);
         padding: 5px;

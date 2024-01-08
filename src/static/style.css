@@ -19,7 +19,7 @@ body {
 }
 
 
-.container{
+.container {
     margin-top: 2rem;
     width: 100vw;
     height: 70vh;
@@ -38,7 +38,7 @@ body {
     padding: 20px;
     margin: 20px 20px 0 20px;
     overflow-y: scroll;
-    
+
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
@@ -55,7 +55,7 @@ body {
     height: 200px;
 } */
 
-.key{
+.key {
     width: auto;
     margin-left: 600px;
     background: rgba(12, 56, 139, 0.62);
@@ -63,7 +63,8 @@ body {
     border-radius: 10px;
     margin-top: 20px;
 }
-.value{
+
+.value {
     width: 58%;
     margin-right: 43%;
     background: rgb(23, 92, 86);
@@ -79,26 +80,31 @@ body {
 }
 
 
-#ask{
+#ask {
     padding: 1.6rem;
-    width:58vw;
+    width: 58vw;
     border-radius: 20px;
     font-size: 1.2rem;
     border: none;
 }
 
-.button{
+.button {
     border: none;
     padding: 1.6rem;
     width: 8vw;
     border-radius: 20px;
     font-size: 1.2rem;
-    background:linear-gradient(rgba(0, 0, 0, 0.294),rgba(255, 255, 255, 0.437)) ;
+    background: linear-gradient(rgba(0, 0, 0, 0.294), rgba(255, 255, 255, 0.437));
+}
+
+.button:hover {
+    cursor: pointer;
+    color: rgb(112, 62, 62);
 }
 
 .source-heading {
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: end;
 }
 
@@ -107,14 +113,16 @@ body {
 }
 
 @media screen and (max-width:1250px) {
-    .input{
+    .input {
         display: flex;
         flex-direction: column;
     }
-    .button{
+
+    .button {
         width: 30vw;
     }
-    .key{
+
+    .key {
         width: auto;
         margin-left: 140px;
         background: rgba(12, 56, 139, 0.62);
@@ -123,7 +131,8 @@ body {
         border-radius: 10px;
         margin-top: 20px;
     }
-    .value{
+
+    .value {
         width: 58%;
         font-size: 14px;
         margin-right: 43%;
@@ -131,9 +140,9 @@ body {
         padding: 5px;
         border-radius: 10px;
     }
+
     .output {
         width: 85vw;
         height: 60vh;
     }
 }
-

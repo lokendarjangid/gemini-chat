@@ -62,7 +62,7 @@ Before running the Gemini Chat-Bot, ensure you have the following installed:
 7. Run the application:
 
     ```bash
-    python app.py
+    python src/app.py
     ```
 
 Visit `http://127.0.0.1:5000` in your web browser to access the Gemini Chat-Bot.

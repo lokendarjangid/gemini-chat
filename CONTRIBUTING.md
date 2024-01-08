@@ -1,6 +1,6 @@
-# Contributing to Gemini Chat-Bot
+# Contributing to Gemini Chat
 
-Welcome to Gemini Chat-Bot's community! We appreciate contributions. Follow these guidelines to contribute.
+Welcome to Gemini Chat's community! We appreciate contributions. Follow these guidelines to contribute.
 
 ## Getting Started
 

@@ -8,7 +8,7 @@ Welcome to Gemini Chat's community! We appreciate contributions. Follow these gu
 
 - Python (version 3.9 or later)
 - Flask (version 3.0.x or later)
-- (google cloud CLI)[https://cloud.google.com/sdk/docs/install]
+- [google cloud CLI](https://cloud.google.com/sdk/docs/install)
 - Other required libraries (install using pip install -r requirements.txt)
 - Gemini API key (obtain from the [Maker Suite Google](https://makersuite.google.com/app/apikey))
 - Google Cloud CLI

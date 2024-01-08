@@ -2,6 +2,9 @@
 
 Gemini Chat-Bot is a full-fledged conversational bot developed using Python, HTML, CSS, JavaScript, and Flask. It leverages the power of the Google AI model called "Gemini" through its API key to provide intelligent and engaging conversations. The bot is designed to be accessible through its website and is available as an open-source project on GitHub.
 
+# Note
+All the codes folders are inside src folder for the purpose of looking clean.
+
 ## Features
 
 - **Conversational Intelligence:** Gemini Chat-Bot utilizes the latest Google AI model, "Gemini," to deliver advanced conversational abilities, making interactions more natural and engaging.
@@ -59,7 +62,7 @@ Before running the Gemini Chat-Bot, ensure you have the following installed:
 7. Run the application:
 
     ```bash
-    python app.py
+    python src/app.py
     ```
 
 Visit `http://127.0.0.1:5000` in your web browser to access the Gemini Chat-Bot.

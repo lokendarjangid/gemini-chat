@@ -55,7 +55,7 @@ Before running the Gemini Chat-Bot, ensure you have the following installed:
 
 6. Configure the Gemini API key:
 
-    Copy the API key from the Make Suite Google and set it as an environment variable:
+    Copy the API key from the [Maker Suite Google](https://makersuite.google.com/) and set it as an environment variable:
 
     replace the name of .env.example to .env and paste the API key in the .env file
 

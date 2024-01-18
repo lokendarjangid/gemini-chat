@@ -7,33 +7,34 @@ Welcome to Gemini Chat's community! We appreciate contributions. Follow these gu
 ### Prerequisites
 
 - Python (version 3.9 or later)
-- Flask (version 3.0.x or later)
-- [google cloud CLI](https://cloud.google.com/sdk/docs/install)
+- Flask (version 3.0 or later)
+- [Google cloud CLI](https://cloud.google.com/sdk/docs/install)
 - Other required libraries (install using pip install -r requirements.txt)
-- Gemini API key (obtain from the [Maker Suite Google](https://makersuite.google.com/app/apikey))
+- Gemini API key (obtain from the [Maker Suite Google] (https://makersuite.google.com/app/apikey) )
 - Google Cloud CLI
-### Installation
+### Installation STEPS:
 
 #### 1.Clone the repository:
 ```Bash
 git clone https://github.com/lokendarjangid/gemini-chat.git
-```
+
+#### 2.Move to Directory
 ```Bash
 cd gemini-chat-bot
-```
 
-#### 2.Create a virtual environment (optional but recommended):
+
+#### 3.Create a virtual environment (optional but recommended):
 ```Bash
 python -m venv venv
 source venv/bin/activate
 ```
  On Windows, use `venv\Scripts\activate`
 
-#### 3.Install dependencies:
+#### 4.Install dependencies:
 ```Bash
 pip install -r requirements.txt
 ```
-### Configuring the Gemini API Key
+### 5.Configuring the Gemini API Key
 
 1. Copy your Gemini API key from the [Maker Suite Google](https://makersuite.google.com/app/apikey).
 2. Create a `.env` file in the project directory (if not already present).
@@ -82,5 +83,10 @@ pip install -r requirements.txt
 - **Relevant Resources:**
     - [Google Cloud documentation](https://cloud.google.com/docs)
     - Contributing guides for popular libraries (e.g., Flask, Python): [Flask](https://flask.palletsprojects.com/en/2.2.x/contributing/), [Python](https://devguide.python.org/)
+
+
+Welcome to Gemini Chat's community! We appreciate contributions. Follow these guidelines to contribute.
+
+## Getting Started
 
 Thank you for your interest in contributing to Gemini Chat!

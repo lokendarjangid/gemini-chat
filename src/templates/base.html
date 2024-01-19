@@ -12,6 +12,15 @@
 <body>
     {% block body %}{% endblock %}
     <script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script>
+    <script>
+        window.addEventListener('beforeunload', function (event) {
+            // Use AJAX to call a route in your Flask app
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '/clear-session', false);
+            xhr.send();
+        });
+    </script>
+
 </body>
 
 </html>

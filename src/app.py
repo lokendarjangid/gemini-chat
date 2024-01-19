@@ -36,6 +36,8 @@ def main():
 @app.route('/clear_session', methods=['GET', 'POST'])
 def clear_session():
     session.pop('output_dict', None)
+    session.clear()
+    # print("\n \n Session cleared \n \n")
     return 'Session cleared'
 
 

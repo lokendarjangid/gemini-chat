@@ -10,18 +10,19 @@ Welcome to Gemini Chat's community! We appreciate contributions. Follow these gu
 - Flask (version 3.0 or later)
 - [Google cloud CLI](https://cloud.google.com/sdk/docs/install)
 - Other required libraries (install using pip install -r requirements.txt)
-- Gemini API key (obtain from the [Maker Suite Google] (https://makersuite.google.com/app/apikey) )
+- Gemini API key (obtain from the [Maker Suite Google](https://makersuite.google.com/app/apikey) )
 - Google Cloud CLI
 ### Installation STEPS:
 
 #### 1.Clone the repository:
 ```Bash
 git clone https://github.com/lokendarjangid/gemini-chat.git
+```
 
 #### 2.Move to Directory
 ```Bash
 cd gemini-chat-bot
-
+```
 
 #### 3.Create a virtual environment (optional but recommended):
 ```Bash
@@ -60,11 +61,6 @@ pip install -r requirements.txt
 3. Make changes and commit them with clear messages.
 4. Push changes to your fork.
 5. Open a pull request from your fork to the main repository.
-
-### Testing
-
-- Run the existing test suite to ensure changes don't introduce new bugs.
-- Add new tests if necessary.
 
 ### Documentation
 

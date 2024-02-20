@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.joined-input{
+    
+}
+
+body {
+    height: 90vh;
+    background: #d6b8fd;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.container {
+    margin-top: 2rem;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.output {
+    width: 65vw;
+    height: 60vh;
+    background: #0000003b;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 20px 0 20px;
+    overflow-y: scroll;
+
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.output::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.key {
+    width: auto;
+    margin-left: 600px;
+    background: rgba(12, 56, 139, 0.62);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.value {
+    width: 58%;
+    margin-right: 43%;
+    background: rgb(23, 92, 86);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+#ask {
+    padding: 1.6rem;
+    width: 58vw;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.button {
+    border: none;
+    padding: 1.6rem;
+    width: 8vw;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    background: white;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: rgb(112, 62, 62);
+}
+
+.source-heading {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.source-link {
+    margin-right: 1rem;
+}
+
+@media screen and (max-width:1250px) {
+    .input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+        width: 30vw;
+    }
+
+    .key {
+        width: auto;
+        margin-left: 140px;
+        background: rgba(12, 56, 139, 0.62);
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .value {
+        width: 58%;
+        font-size: 14px;
+        margin-right: 43%;
+        background: rgb(23, 92, 86);
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .output {
+        width: 85vw;
+        height: 60vh;
+    }
+}

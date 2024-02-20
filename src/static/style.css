@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,900&display=swap");
-body, html {
+
+body,
+html {
   font-family: Red Hat Display, sans-serif;
   font-weight: 400;
   line-height: 1.25em;
   letter-spacing: 0.025em;
   color: #333;
   background: #7084d1;
-  margin: 50px 40px 0 ;
+  margin: 50px 40px 0;
 }
 
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 5px;
   background-color: whitesmoke;
 }
@@ -21,22 +23,23 @@ body, html {
 
 
 ::-webkit-scrollbar-thumb {
-  background: slategray; 
-  border-radius: 10px; 
+  background: slategray;
+  border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:active {
-  background: darkslategray; 
+  background: darkslategray;
 }
+
 ::-webkit-scrollbar-track {
-  background: whitesmoke; 
+  background: whitesmoke;
 }
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-
-
+  height: 76vh;
 }
 
 .pic {
@@ -56,19 +59,24 @@ body, html {
   flex-direction: column;
   justify-content: center;
 }
+
 .contact .pic {
   position: absolute;
   left: 0;
 }
+
 .contact .name {
   font-weight: 500;
   margin-bottom: 0.125rem;
   font-size: 1.3rem;
 }
-.contact .message, .contact .seen {
+
+.contact .message,
+.contact .seen {
   font-size: 0.9rem;
   color: #999;
 }
+
 .contact .badge {
   box-sizing: border-box;
   position: absolute;
@@ -98,12 +106,14 @@ body, html {
   background: white;
   box-shadow: 0 0 8rem 0 rgba(0, 0, 0, 0.1), 0rem 2rem 4rem -3rem rgba(0, 0, 0, 0.5);
 }
+
 .chat .contact.bar {
 
   flex-shrink: 0;
   margin: 1rem;
   box-sizing: border-box;
 }
+
 .chat .messages {
   padding: 1rem;
   background: #F7F7F7;
@@ -112,6 +122,7 @@ body, html {
   box-shadow: inset 0 2rem 2rem -2rem rgba(0, 0, 0, 0.05), inset 0 -2rem 2rem -2rem rgba(0, 0, 0, 0.05);
   height: -webkit-fill-available
 }
+
 .chat .messages .time {
   font-size: 0.8rem;
   background: #EEE;
@@ -123,6 +134,7 @@ body, html {
   width: fit-content;
   margin: 0 auto;
 }
+
 .chat .messages .message {
   box-sizing: border-box;
   padding: 0.5rem 1rem;
@@ -136,12 +148,14 @@ body, html {
   max-width: 66%;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.075), 0rem 1rem 1rem -1rem rgba(0, 0, 0, 0.1);
 }
+
 .chat .messages .message.parker {
   margin: 1rem 1rem 1rem auto;
   border-radius: 1.125rem 1.125rem 0 1.125rem;
   background: #333;
   color: white;
 }
+
 .chat .messages .message .typing {
   display: inline-block;
   width: 0.8rem;
@@ -151,26 +165,31 @@ body, html {
   background: #ccc;
   border-radius: 50%;
 }
+
 .chat .messages .message .typing.typing-1 {
   -webkit-animation: typing 3s infinite;
-          animation: typing 3s infinite;
+  animation: typing 3s infinite;
 }
+
 .chat .messages .message .typing.typing-2 {
   -webkit-animation: typing 3s 250ms infinite;
-          animation: typing 3s 250ms infinite;
+  animation: typing 3s 250ms infinite;
 }
+
 .chat .messages .message .typing.typing-3 {
   -webkit-animation: typing 3s 500ms infinite;
-          animation: typing 3s 500ms infinite;
+  animation: typing 3s 500ms infinite;
 }
+
 .chat .input {
   box-sizing: border-box;
   flex-basis: 4rem;
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  padding: 1rem 0.5rem  1rem;
+  padding: 1rem 0.5rem 1rem;
 }
+
 .chat .input button {
   font-size: 1.5rem;
   margin-right: 1rem;
@@ -180,9 +199,11 @@ body, html {
   border: none;
   background: none;
 }
+
 .chat .input button:hover {
   color: #333;
 }
+
 .chat .input input {
   border: 2px solid slategrey;
   background-image: none;
@@ -196,6 +217,7 @@ body, html {
   font-weight: 400;
   letter-spacing: 0.025em;
 }
+
 input:focus {
   outline: none;
   border: none;
@@ -207,10 +229,14 @@ input:focus {
 }
 
 @-webkit-keyframes typing {
-  0%, 75%, 100% {
+
+  0%,
+  75%,
+  100% {
     transform: translate(0, 0.25rem) scale(0.9);
     opacity: 0.5;
   }
+
   25% {
     transform: translate(0, -0.25rem) scale(1);
     opacity: 1;
@@ -218,26 +244,31 @@ input:focus {
 }
 
 @keyframes typing {
-  0%, 75%, 100% {
+
+  0%,
+  75%,
+  100% {
     transform: translate(0, 0.25rem) scale(0.9);
     opacity: 0.5;
   }
+
   25% {
     transform: translate(0, -0.25rem) scale(1);
     opacity: 1;
   }
 }
+
 .pic.stark {
   background-image: url("./logo.png");
 }
 
-footer{
+footer {
   background-color: black;
   color: aliceblue;
-  
+
   width: 100%;
   z-index: 9;
-  margin-top: 8vh;
+  margin-top: 8.3vh;
   position: absolute;
   right: 0;
   line-height: 1.8;
@@ -247,13 +278,13 @@ footer{
   text-align: center;
 }
 
-footer a{
-  color:#F7F7F7;
+footer a {
+  color: #F7F7F7;
   font-weight: bold;
 }
 
 @media screen and (max-width:1250px) {
-  .pic{
+  .pic {
     width: 2.5rem;
     height: 2.5rem;
   }

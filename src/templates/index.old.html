@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Gemini Chat</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+    <h1>Gemini chat</h1>
+    <div class="output">
+        <h3>
+            {% if output %}
+            {% for key, value in output.items() %}
+            <!-- Clean the chat everytime new message is sent-->
+
+            <p>
+            <div class="key"><b>{{ key }}</b></div> <!-- value by user-->
+            <br>
+            <div class="value"><b>{{ value }}</b></div> <!-- response by bot-->
+
+            </p>
+            {% endfor %}
+            {% else %}
+            <h3>Enter what do you want to ask?</h3>
+            {% endif %}
+        </h3>
+    </div>
+
+</div>
+
+<form action="/" class="form" method="POST">
+
+    <input type="text" placeholder="Ask me anything!" id="ask" name="ask">
+    <input type="submit" class="button">
+
+</form>
+
+<script src="https://kit.fontawesome.com/c4a3389572.js" crossorigin="anonymous"></script>
+
+{% endblock body %}

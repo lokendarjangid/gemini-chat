@@ -1,148 +1,291 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,900&display=swap");
 
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+body,
+html {
+  font-family: Red Hat Display, sans-serif;
+  font-weight: 400;
+  line-height: 1.25em;
+  letter-spacing: 0.025em;
+  color: #333;
+  background: #7084d1;
+  margin: 50px 40px 0;
 }
 
-body {
-    height: 100vh;
-    /* linear gradient of indian flag */
-    background: linear-gradient(to bottom, rgb(112, 62, 62), rgba(17, 157, 71, 0.425), rgba(255, 255, 3, 0.406));
-    /* background: linear-gradient(160deg,orange,white,green); */
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-
-.container {
-    margin-top: 2rem;
-    width: 100vw;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.output {
-    width: 65vw;
-    height: 60vh;
-    background: #0000003b;
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
-    padding: 20px;
-    margin: 20px 20px 0 20px;
-    overflow-y: scroll;
-
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.output::-webkit-scrollbar {
-    display: none;
-}
-
-/* .pikaimg{
-    width: 200px;
-    height: 200px;
-} */
-
-.key {
-    width: auto;
-    margin-left: 600px;
-    background: rgba(12, 56, 139, 0.62);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.value {
-    width: 58%;
-    margin-right: 43%;
-    background: rgb(23, 92, 86);
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: whitesmoke;
 }
 
 
-#ask {
-    padding: 1.6rem;
-    width: 58vw;
-    border-radius: 20px;
-    font-size: 1.2rem;
-    border: none;
+::-webkit-scrollbar-thumb:hover {
+  background: slategray;
 }
 
-.button {
-    border: none;
-    padding: 1.6rem;
-    width: 8vw;
-    border-radius: 20px;
-    font-size: 1.2rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.294), rgba(255, 255, 255, 0.437));
+
+::-webkit-scrollbar-thumb {
+  background: slategray;
+  border-radius: 10px;
 }
 
-.button:hover {
-    cursor: pointer;
-    color: rgb(112, 62, 62);
+::-webkit-scrollbar-thumb:active {
+  background: darkslategray;
 }
 
-.source-heading {
-    width: 100%;
-    display: flex;
-    justify-content: end;
+::-webkit-scrollbar-track {
+  background: whitesmoke;
 }
 
-.source-link {
-    margin-right: 1rem;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 76vh;
+}
+
+.pic {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.contact {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 5rem;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .pic {
+  position: absolute;
+  left: 0;
+}
+
+.contact .name {
+  font-weight: 500;
+  margin-bottom: 0.125rem;
+  font-size: 1.3rem;
+}
+
+.contact .message,
+.contact .seen {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.contact .badge {
+  box-sizing: border-box;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 0.125rem;
+  border-radius: 1rem;
+  top: 0;
+  left: 2.5rem;
+  background: #333;
+  color: white;
+}
+
+
+.chat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60rem;
+  height: 33rem;
+  z-index: 2;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 0 8rem 0 rgba(0, 0, 0, 0.1), 0rem 2rem 4rem -3rem rgba(0, 0, 0, 0.5);
+}
+
+.chat .contact.bar {
+
+  flex-shrink: 0;
+  margin: 1rem;
+  box-sizing: border-box;
+}
+
+.chat .messages {
+  padding: 1rem;
+  background: #F7F7F7;
+  flex-shrink: 2;
+  overflow-y: auto;
+  box-shadow: inset 0 2rem 2rem -2rem rgba(0, 0, 0, 0.05), inset 0 -2rem 2rem -2rem rgba(0, 0, 0, 0.05);
+  height: -webkit-fill-available
+}
+
+.chat .messages .time {
+  font-size: 0.8rem;
+  background: #EEE;
+  padding: 0.25rem 1rem;
+  border-radius: 2rem;
+  color: #999;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.chat .messages .message {
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  background: #FFF;
+  border-radius: 1.125rem 1.125rem 1.125rem 0;
+  min-height: 2.25rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 66%;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.075), 0rem 1rem 1rem -1rem rgba(0, 0, 0, 0.1);
+}
+
+.chat .messages .message.parker {
+  margin: 1rem 1rem 1rem auto;
+  border-radius: 1.125rem 1.125rem 0 1.125rem;
+  background: #333;
+  color: white;
+}
+
+.chat .messages .message .typing {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0rem;
+  box-sizing: border-box;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.chat .messages .message .typing.typing-1 {
+  -webkit-animation: typing 3s infinite;
+  animation: typing 3s infinite;
+}
+
+.chat .messages .message .typing.typing-2 {
+  -webkit-animation: typing 3s 250ms infinite;
+  animation: typing 3s 250ms infinite;
+}
+
+.chat .messages .message .typing.typing-3 {
+  -webkit-animation: typing 3s 500ms infinite;
+  animation: typing 3s 500ms infinite;
+}
+
+.chat .input {
+  box-sizing: border-box;
+  flex-basis: 4rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem 1rem;
+}
+
+.chat .input button {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #666;
+  cursor: pointer;
+  transition: color 200ms;
+  border: none;
+  background: none;
+}
+
+.chat .input button:hover {
+  color: #333;
+}
+
+.chat .input input {
+  border: 2px solid slategrey;
+  background-image: none;
+  background-color: white;
+  padding: 0.7rem 1rem;
+  margin-right: 1rem;
+  border-radius: 1.125rem;
+  flex-grow: 2;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1), 0rem 1rem 1rem -1rem rgba(0, 0, 0, 0.2);
+  font-family: Red Hat Display, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+
+.chat .input input:placeholder {
+  color: #999;
+}
+
+@-webkit-keyframes typing {
+
+  0%,
+  75%,
+  100% {
+    transform: translate(0, 0.25rem) scale(0.9);
+    opacity: 0.5;
+  }
+
+  25% {
+    transform: translate(0, -0.25rem) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+
+  0%,
+  75%,
+  100% {
+    transform: translate(0, 0.25rem) scale(0.9);
+    opacity: 0.5;
+  }
+
+  25% {
+    transform: translate(0, -0.25rem) scale(1);
+    opacity: 1;
+  }
+}
+
+.pic.stark {
+  background-image: url("./logo.png");
+}
+
+footer {
+  background-color: black;
+  color: aliceblue;
+
+  width: 100%;
+  z-index: 9;
+  margin-top: 8.3vh;
+  position: absolute;
+  right: 0;
+  line-height: 1.8;
+  left: 0;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  text-align: center;
+}
+
+footer a {
+  color: #F7F7F7;
+  font-weight: bold;
 }
 
 @media screen and (max-width:1250px) {
-    .input {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .button {
-        width: 30vw;
-    }
-
-    .key {
-        width: auto;
-        margin-left: 140px;
-        background: rgba(12, 56, 139, 0.62);
-        padding: 5px;
-        font-size: 14px;
-        border-radius: 10px;
-        margin-top: 20px;
-    }
-
-    .value {
-        width: 58%;
-        font-size: 14px;
-        margin-right: 43%;
-        background: rgb(23, 92, 86);
-        padding: 5px;
-        border-radius: 10px;
-    }
-
-    .output {
-        width: 85vw;
-        height: 60vh;
-    }
+  .pic {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }

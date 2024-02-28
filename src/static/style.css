@@ -265,7 +265,8 @@ input:focus {
 footer {
   background-color: black;
   color: aliceblue;
-
+  /* display: flex;
+  flex-direction: column; */
   width: 100%;
   z-index: 9;
   margin-top: 8.3vh;
@@ -288,4 +289,5 @@ footer a {
     width: 2.5rem;
     height: 2.5rem;
   }
+ 
 }

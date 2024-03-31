@@ -98,8 +98,8 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 60rem;
-  height: 33rem;
+  width: 78rem;
+  height: 40rem;
   z-index: 2;
   box-sizing: border-box;
   border-radius: 1rem;
@@ -269,7 +269,7 @@ footer {
   flex-direction: column; */
   width: 100%;
   z-index: 9;
-  margin-top: 8.3vh;
+  margin-top: 5.3vh;
   position: absolute;
   right: 0;
   line-height: 1.8;
@@ -289,5 +289,5 @@ footer a {
     width: 2.5rem;
     height: 2.5rem;
   }
- 
+
 }

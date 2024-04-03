@@ -13,3 +13,4 @@ venv/
 __pycache__/
 .DS_Store
 /env
+service-account.json
